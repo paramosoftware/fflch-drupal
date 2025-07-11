@@ -4,9 +4,9 @@ dependencies:
   module:
     - language
   theme:
-    - fflch
+    - seven
 id: seletordeidioma
-theme: fflch
+theme: seven
 region: header
 weight: -2
 provider: null

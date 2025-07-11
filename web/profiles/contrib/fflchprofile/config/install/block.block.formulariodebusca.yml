@@ -4,9 +4,9 @@ dependencies:
   module:
     - search
   theme:
-    - fflch
+    - seven
 id: formulariodebusca
-theme: fflch
+theme: seven
 region: header_right
 weight: 0
 provider: null

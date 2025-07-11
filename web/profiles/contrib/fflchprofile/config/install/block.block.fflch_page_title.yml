@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - fflch
+    - seven
 id: fflch_page_title
-theme: fflch
+theme: seven
 region: content
 weight: -50
 provider: null

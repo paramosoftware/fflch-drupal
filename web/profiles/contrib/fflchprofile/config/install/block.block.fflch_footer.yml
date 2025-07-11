@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - fflch
+    - seven
 id: fflch_footer
-theme: fflch
+theme: seven
 region: footer_fifth
 weight: 0
 provider: null

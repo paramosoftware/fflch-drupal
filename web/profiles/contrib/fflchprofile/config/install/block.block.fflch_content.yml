@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - fflch
+    - seven
 id: fflch_content
-theme: fflch
+theme: seven
 region: content
 weight: 0
 provider: null

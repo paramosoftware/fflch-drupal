@@ -2,7 +2,7 @@ name: fflchprofile
 type: profile
 description: 'fflch profile'
 version: VERSION
-core_version_requirement: ^9 || ^10 || ^11
+core_version_requirement: 9.x
 # Módulos do core usado no profile FFLCH
 install:
   - book
@@ -18,7 +18,7 @@ install:
   - datetime
   - editor
   - help
-  - history 
+  - history
   - quickedit
   - image
   - language
@@ -44,4 +44,5 @@ install:
   - node
   - menu_link_content
 themes:
+#  - fflch
   - seven

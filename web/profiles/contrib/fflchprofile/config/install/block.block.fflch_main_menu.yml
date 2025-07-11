@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - fflch
+    - seven
 id: fflch_main_menu
-theme: fflch
+theme: seven
 region: primary_menu
 weight: 0
 provider: null
