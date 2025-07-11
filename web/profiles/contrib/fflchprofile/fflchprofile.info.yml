@@ -44,5 +44,4 @@ install:
   - node
   - menu_link_content
 themes:
-  - fflch
   - seven
