@@ -59,24 +59,13 @@ Instalação usando o profile fflch para o site sti.fflch.usp.br com *mysql*:
 
 Servidor http básico (usuário: fflch e senha: admin):
 
-    ./vendor/bin/drupal serve -vvv
+    ./vendor/bin/drush rs
 
 Caso queira escolher ip e porta:
 
-    ./vendor/bin/drupal serve 0.0.0.0:8000 -vvv
+    ./vendor/bin/drush rs 127.0.0.1:8000
 
-Criando nodes aleatórios:
-
-    ./vendor/bin/drupal create:nodes
-
-Deletando todos nodes:
-
-    ./vendor/bin/drupal entity:delete node --all
-
-Se quiser apagar o banco para fazer uma instalação zerada:
-
-    # mysql
-    ./vendor/bin/drupal database:drop
+Se quiser apagar o banco no sqlite:
 
     # sqlite
     rm web/sites/default/files/.ht.sqlite*
@@ -220,24 +209,63 @@ traduzidos pois o langcode está com und (undefinided). Para corrigir:
 
 # Primeira rodada de atualização - core para 9.0.0
 
-No servidor antigo:
+No servidor antigo já foram removidos os seguintes módulos:
 
-    ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow form_placeholder term_reference_tree feeds_youtube cpf theme_permission
+Não ativados, remoção direta na produção:
 
-- O módulo term_reference_tree funciona ^9.1, mas não tem nenhuma release que funcione 9.0
+    cd web/modules/contrib/
+    rm -rf media_entity feeds_youtube
 
-Depois que o "composer update" funcionar:   ./vendor/bin/drush pm-uninstall media_entity media_entity_slideshow form_placeholder term_reference_tree feeds_youtube cpf libraries
+O módulo theme_permission vamos desativar, mas quando estivermos no drupal 10 podemos ativá-lo novamente.
 
-* Desinstalar o módulo markdown requerido pelo módulo webform_cpf.
+Os módulos cpf, libraries e form_placeholder serão desativados e removidos
 
-## Pós-atualização:
+    for i in `ls|grep fflch`; do drush @$i pm-uninstall cpf form_placeholder theme_permission libraries --yes; done
 
-    ./vendor/bin/drush en webform_cpf webform_boleto_usp
+    cd web/modules/contrib/
+    rm -rf cpf form_placeholder
 
-## Módulos que podemos reavaliar se usaremos:
+Removendo markdown:
 
-- theme_permission
+    for i in `ls|grep fflch`; do drush @$i cim --partial --source=/var/aegir/platforms/drupal8916a/web/profiles/contrib/fflchprofile/modules/fflch_configs/config/mandatory --yes; done
+
+    for i in `ls|grep fflch`; do drush @$i pm-uninstall ckeditor_markdown markdown --yes; done
+
+    (FALTA) Removendo na raiz:
+
+    cd web/modules/contrib/
+    rm -rf cpf markdown ckeditor_markdown
+ath: 'modules/contrib/languageicons/flags/*.png'
+Talvez:
+
+    for i in `ls|grep fflch`; do drush @$i config:set system.theme default fflch --yes; done
+
+    for i in `ls|grep fflch`; do drush @$i config:set languageicons.settings path 'modules/contrib/languageicons/flags/*.png' -y; done
+
 
 ## Sites que não vão subir para versão 9.0.0:
 
 - lisa.fflch.usp.br (quando subirmos o core para 9.1, re-inserir term_reference_tree)
+- centrodametropole.fflch.usp.br por conta do tema
+    
+Identifica site com problema ao aplicar configurações:
+
+    for i in `ls | grep fflch`; do
+      echo "Avaliando $i"
+      if drush @$i cim --partial  --source=/var/aegir/platforms/drupal8916a/web/profiles/contrib/fflchprofile/modules/fflch_configs/config/mandatory  --yes 2>&1  | grep "There were errors"; then
+        echo "Problema $i"
+      fi
+    done
+
+Apagar configurações órfãs nos sites com probelma:  
+
+    site='SITE.fflch.usp.br'
+    for j in `drush @$site cim --partial --source=/var/aegir/platforms/drupal8916a/web/profiles/contrib/fflchprofile/modules/fflch_configs/config/mandatory --yes 2>&1 | paste -sd ' '| grep -oP 'Configuration <em[^>]*>\K[^<]+'`; do
+      drush @$site config:set $j chave valor --yes
+      drush @$site config:delete $j --yes
+    done
+
+Pós removoção da configurações problemáticas:
+
+    drush @ppgh.fflch.usp.br config:set system.theme default fflch --yes
+    drush @ppgh.fflch.usp.br config:set languageicons.settings path 'modules/contrib/languageicons/flags/*.png' -y
