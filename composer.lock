@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf6eec66de298c1c5f6bab2dd28da5c8",
+    "content-hash": "ede3e07a0a44d9ada7c86e945fea984d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -97,16 +97,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "3.6.4",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:jquery/jquery-dist.git",
-                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+                "reference": "cfd8e3a885dca7b406791c1eed472af9dd717e8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/91ef2d8836342875f2519b5815197ea0f23613cf",
-                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/cfd8e3a885dca7b406791c1eed472af9dd717e8e",
+                "reference": "cfd8e3a885dca7b406791c1eed472af9dd717e8e"
             },
             "type": "bower-asset",
             "license": [
@@ -148,7 +148,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/douglascrockford/JSON-js.git",
+                "url": "git@github.com:douglascrockford/JSON-js.git",
                 "reference": "7e83f38a2312429fd4933169c1f6a27fd65e889c"
             },
             "dist": {
@@ -1476,29 +1476,29 @@
         },
         {
             "name": "doctrine/deprecations",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/deprecations.git",
-                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38"
+                "reference": "d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
-                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca",
+                "reference": "d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "conflict": {
-                "phpunit/phpunit": "<=7.5 || >=13"
+                "phpunit/phpunit": "<=7.5 || >=14"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^9 || ^12 || ^13",
-                "phpstan/phpstan": "1.4.10 || 2.1.11",
+                "doctrine/coding-standard": "^9 || ^12 || ^14",
+                "phpstan/phpstan": "1.4.10 || 2.1.30",
                 "phpstan/phpstan-phpunit": "^1.0 || ^2",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6 || ^10.5 || ^11.5 || ^12",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6 || ^10.5 || ^11.5 || ^12.4 || ^13.0",
                 "psr/log": "^1 || ^2 || ^3"
             },
             "suggest": {
@@ -1518,9 +1518,9 @@
             "homepage": "https://www.doctrine-project.org/",
             "support": {
                 "issues": "https://github.com/doctrine/deprecations/issues",
-                "source": "https://github.com/doctrine/deprecations/tree/1.1.5"
+                "source": "https://github.com/doctrine/deprecations/tree/1.1.6"
             },
-            "time": "2025-04-07T20:06:18+00:00"
+            "time": "2026-02-07T07:09:04+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -2003,17 +2003,17 @@
         },
         {
             "name": "drupal/asset_injector",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/asset_injector.git",
-                "reference": "8.x-2.7"
+                "reference": "8.x-2.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.7.zip",
-                "reference": "8.x-2.7",
-                "shasum": "95287280fc513b4d32f6fc81feac9ada0a6f7948"
+                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.8.zip",
+                "reference": "8.x-2.8",
+                "shasum": "e29c1cafd2b1d84e00545e66b07d12ddaea9ad91"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -2021,8 +2021,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.7",
-                    "datestamp": "1591636386",
+                    "version": "8.x-2.8",
+                    "datestamp": "1634576177",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2031,7 +2031,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3784,6 +3784,10 @@
                     "homepage": "https://www.drupal.org/user/928152"
                 },
                 {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
                     "name": "mparker17",
                     "homepage": "https://www.drupal.org/user/536298"
                 },
@@ -5435,18 +5439,6 @@
             ],
             "authors": [
                 {
-                    "name": "alex_b",
-                    "homepage": "https://www.drupal.org/user/53995"
-                },
-                {
-                    "name": "dave reid",
-                    "homepage": "https://www.drupal.org/user/53892"
-                },
-                {
-                    "name": "e2thex",
-                    "homepage": "https://www.drupal.org/user/189123"
-                },
-                {
                     "name": "febbraro",
                     "homepage": "https://www.drupal.org/user/43670"
                 },
@@ -5455,40 +5447,16 @@
                     "homepage": "https://www.drupal.org/user/581844"
                 },
                 {
-                    "name": "Ian Ward",
-                    "homepage": "https://www.drupal.org/user/4736"
-                },
-                {
-                    "name": "jmiccolis",
-                    "homepage": "https://www.drupal.org/user/31731"
-                },
-                {
                     "name": "joelpittet",
                     "homepage": "https://www.drupal.org/user/160302"
-                },
-                {
-                    "name": "kking",
-                    "homepage": "https://www.drupal.org/user/24399"
                 },
                 {
                     "name": "megachriz",
                     "homepage": "https://www.drupal.org/user/654114"
                 },
                 {
-                    "name": "tobby",
-                    "homepage": "https://www.drupal.org/user/154797"
-                },
-                {
                     "name": "twistor",
                     "homepage": "https://www.drupal.org/user/473738"
-                },
-                {
-                    "name": "Will White",
-                    "homepage": "https://www.drupal.org/user/32237"
-                },
-                {
-                    "name": "yhahn",
-                    "homepage": "https://www.drupal.org/user/264833"
                 }
             ],
             "description": "Aggregates RSS/Atom/RDF feeds, imports CSV files and more.",
@@ -6371,7 +6339,7 @@
             "extra": {
                 "drupal": {
                     "version": "3.0.0",
-                    "datestamp": "1635754974",
+                    "datestamp": "1648723395",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6391,6 +6359,10 @@
                 {
                     "name": "drupalnetworks",
                     "homepage": "https://www.drupal.org/user/846558"
+                },
+                {
+                    "name": "elusivemind",
+                    "homepage": "https://www.drupal.org/user/350597"
                 },
                 {
                     "name": "sasiddiqui",
@@ -6666,7 +6638,7 @@
             ],
             "authors": [
                 {
-                    "name": "Betawerk",
+                    "name": "betawerk",
                     "homepage": "https://www.drupal.org/user/426816"
                 },
                 {
@@ -8075,6 +8047,10 @@
             ],
             "authors": [
                 {
+                    "name": "acbramley",
+                    "homepage": "https://www.drupal.org/user/1036766"
+                },
+                {
                     "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
@@ -8089,6 +8065,10 @@
                 {
                     "name": "greggles",
                     "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "mably",
+                    "homepage": "https://www.drupal.org/user/3375160"
                 }
             ],
             "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
@@ -8928,12 +8908,12 @@
                     "homepage": "https://www.drupal.org/user/3145389"
                 },
                 {
-                    "name": "andriy parkhomiuk",
-                    "homepage": "https://www.drupal.org/user/2565426"
-                },
-                {
                     "name": "dejan0",
                     "homepage": "https://www.drupal.org/user/3634531"
+                },
+                {
+                    "name": "grask0",
+                    "homepage": "https://www.drupal.org/user/2565426"
                 },
                 {
                     "name": "joseph.olstad",
@@ -9090,7 +9070,7 @@
                     "homepage": "https://www.drupal.org/user/3578037"
                 },
                 {
-                    "name": "JacobSanford",
+                    "name": "jacobsanford",
                     "homepage": "https://www.drupal.org/user/806538"
                 },
                 {
@@ -10108,6 +10088,10 @@
                     "homepage": "https://www.drupal.org/user/536694"
                 },
                 {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
                     "name": "neslee canil pinto",
                     "homepage": "https://www.drupal.org/user/3580850"
                 },
@@ -10306,7 +10290,7 @@
                     "datestamp": "1643355378",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -12719,16 +12703,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "5cf826f2991858b54d5c3809bee745560a1042a7"
+                "reference": "37308608e599f34a1a4845b16440047ec98a172a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5cf826f2991858b54d5c3809bee745560a1042a7",
-                "reference": "5cf826f2991858b54d5c3809bee745560a1042a7",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/37308608e599f34a1a4845b16440047ec98a172a",
+                "reference": "37308608e599f34a1a4845b16440047ec98a172a",
                 "shasum": ""
             },
             "require": {
@@ -12746,7 +12730,7 @@
                 "graylog2/gelf-php": "^1.4.2 || ^2@dev",
                 "guzzlehttp/guzzle": "^7.4",
                 "guzzlehttp/psr7": "^2.2",
-                "mongodb/mongodb": "^1.8",
+                "mongodb/mongodb": "^1.8 || ^2.0",
                 "php-amqplib/php-amqplib": "~2.4 || ^3",
                 "phpspec/prophecy": "^1.15",
                 "phpstan/phpstan": "^1.10",
@@ -12805,7 +12789,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.10.0"
+                "source": "https://github.com/Seldaek/monolog/tree/2.11.0"
             },
             "funding": [
                 {
@@ -12817,7 +12801,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-12T12:43:37+00:00"
+            "time": "2026-01-01T13:05:00+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -13057,16 +13041,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.19.4",
+            "version": "v5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "715f4d25e225bc47b293a8b997fe6ce99bf987d2"
+                "reference": "dca41cd15c2ac9d055ad70dbfd011130757d1f82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/715f4d25e225bc47b293a8b997fe6ce99bf987d2",
-                "reference": "715f4d25e225bc47b293a8b997fe6ce99bf987d2",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dca41cd15c2ac9d055ad70dbfd011130757d1f82",
+                "reference": "dca41cd15c2ac9d055ad70dbfd011130757d1f82",
                 "shasum": ""
             },
             "require": {
@@ -13107,9 +13091,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.19.4"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.7.0"
             },
-            "time": "2024-09-29T15:01:53+00:00"
+            "time": "2025-12-06T11:56:16+00:00"
         },
         {
             "name": "npm-asset/ckeditor_youtube",
@@ -13347,7 +13331,68 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Getopt",
                 "source": "https://github.com/pear/Console_Getopt"
             },
+            "abandoned": true,
             "time": "2019-11-20T18:27:48+00:00"
+        },
+        {
+            "name": "pear/console_table",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Console_Table.git",
+                "reference": "1930c11897ca61fd24b95f2f785e99e0f36dcdea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Console_Table/zipball/1930c11897ca61fd24b95f2f785e99e0f36dcdea",
+                "reference": "1930c11897ca61fd24b95f2f785e99e0f36dcdea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "suggest": {
+                "pear/Console_Color2": ">=0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Table.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "homepage": "http://pear.php.net/user/yunosh"
+                },
+                {
+                    "name": "Tal Peer",
+                    "homepage": "http://pear.php.net/user/tal"
+                },
+                {
+                    "name": "Xavier Noguer",
+                    "homepage": "http://pear.php.net/user/xnoguer"
+                },
+                {
+                    "name": "Richard Heyes",
+                    "homepage": "http://pear.php.net/user/richard"
+                }
+            ],
+            "description": "Library that makes it easy to build console style tables.",
+            "homepage": "http://pear.php.net/package/Console_Table/",
+            "keywords": [
+                "console"
+            ],
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Table",
+                "source": "https://github.com/pear/Console_Table"
+            },
+            "abandoned": true,
+            "time": "2018-01-25T20:47:17+00:00"
         },
         {
             "name": "pear/pear-core-minimal",
@@ -14094,25 +14139,28 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.12",
+            "version": "v0.12.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "a0d9981aa07ecfcbea28e4bfa868031cca121e7d"
+                "reference": "4821fab5b7cd8c49a673a9fd5754dc9162bb9e97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a0d9981aa07ecfcbea28e4bfa868031cca121e7d",
-                "reference": "a0d9981aa07ecfcbea28e4bfa868031cca121e7d",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4821fab5b7cd8c49a673a9fd5754dc9162bb9e97",
+                "reference": "4821fab5b7cd8c49a673a9fd5754dc9162bb9e97",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-tokenizer": "*",
-                "nikic/php-parser": "~4.0|~3.0|~2.0|~1.3",
-                "php": "^8.0 || ^7.0 || ^5.5.9",
-                "symfony/console": "~5.0|~4.0|~3.0|^2.4.2|~2.3.10",
-                "symfony/var-dumper": "~5.0|~4.0|~3.0|~2.7"
+                "nikic/php-parser": "^5.0 || ^4.0",
+                "php": "^8.0 || ^7.4",
+                "symfony/console": "^8.0 || ^7.0 || ^6.0 || ^5.0 || ^4.0 || ^3.4",
+                "symfony/var-dumper": "^8.0 || ^7.0 || ^6.0 || ^5.0 || ^4.0 || ^3.4"
+            },
+            "conflict": {
+                "symfony/console": "4.4.37 || 5.3.14 || 5.3.15 || 5.4.3 || 5.4.4 || 6.0.3 || 6.0.4"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.2",
@@ -14163,9 +14211,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.12"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.21"
             },
-            "time": "2021-11-30T14:05:36+00:00"
+            "time": "2026-03-06T21:21:28+00:00"
         },
         {
             "name": "querypath/querypath",
@@ -17392,11 +17440,11 @@
         },
         {
             "name": "uspdev/webform_boleto_usp",
-            "version": "1.0.13",
+            "version": "1.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uspdev/webform_boleto_usp.git",
-                "reference": "6360b0ce1ad89f71ea0da2e5a7b04f4e37be0033"
+                "reference": "8faf9f51f35b9c2d71b334df93c0412212380289"
             },
             "require": {
                 "uspdev/boleto": "1.0.7"
@@ -17412,7 +17460,7 @@
                 }
             ],
             "description": "Gera boletos usando api USP",
-            "time": "2025-11-03T19:52:09+00:00"
+            "time": "2026-04-06T13:27:11+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -17585,7 +17633,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
