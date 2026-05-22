@@ -156,7 +156,7 @@
         "drupal/webform_xlsx_export": "1.0",
         "drupal/youtube": "1.2",
         "drupal/youtube_playlist": "1.x-dev#2e033f41",
-        "drush/drush": "8.x",
+        "drush/drush": "^10.0",
         "fflch/cem-theme": "1.0.3",
         "fflch/centrodametropole_breadcrumb": "1.0.1",
         "fflch/fflch-theme": "1.0.8",
